@@ -10,7 +10,7 @@ public class ejecucion {
   public static void main(String[] args) {
     Scanner entrada = new Scanner(System.in);
     System.out.println(
-      "selecione una figura geometrica para calcular su area y perimetro  : \n1:Triangulo \n 2:Rombo \n 3:pentagono"
+      "Seleccione una figura geométrica para calcular su área y perímetro:\n1: Triángulo\n2: Rombo\n3: Pentágono"
     );
     int select = entrada.nextInt();
     System.out.println("que desea calcular  : \n1:Area \n2:perimetro ");
