@@ -15,7 +15,6 @@ public class ejecucion {
     int select = entrada.nextInt();
     System.out.println("que desea calcular  : \n1:Area \n2:perimetro ");
     opcion = entrada.nextInt();
-
     switch (select) {
       case 1:
         if (opcion == 1) {
@@ -23,7 +22,6 @@ public class ejecucion {
         } else if (opcion == 2) {
           triangulo.calcularPerimetro();
         }
-
         break;
       case 2:
         if (opcion == 1) {
@@ -31,7 +29,6 @@ public class ejecucion {
         } else if (opcion == 2) {
           rombo.calcularPerimetro();
         }
-
         break;
       case 3:
         if (opcion == 1) {
@@ -39,7 +36,6 @@ public class ejecucion {
         } else if (opcion == 2) {
           pent.calcularPerimetro();
         }
-
         break;
     }
   }
