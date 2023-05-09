@@ -68,6 +68,11 @@ public class Rombo extends figurasGeometricas {
 
   @Override
   public void calcularArea() {
+    System.out.println("ingrese la diagonal mayor del rombo");
+    rombo.setDiagmayor(entrada.nextDouble());
+
+    System.out.println("ingrese la diagonal menor del rombo");
+    rombo.setDiagmenor(entrada.nextDouble());
     area = (diagmayor * diagmenor) / 2;
 
     System.out.println(" el area del rombo es " + area);
@@ -75,25 +80,12 @@ public class Rombo extends figurasGeometricas {
 
   @Override
   public void calcularPerimetro() {
-    perimetro = 4 * Rlado;
-
-    System.out.println("el perimetro del Rombo es  " + perimetro);
-  }
-
-  @Override
-  public void ingresarDatosPerimetro() {
     System.out.println(
       "ingrese la medida de un lado del Rombo para calcular el perimetro"
     );
     rombo.setRlado(entrada.nextDouble());
-  }
+    perimetro = 4 * Rlado;
 
-  @Override
-  public void ingresarDatosArea() {
-    System.out.println("ingrese la diagonal mayor del rombo");
-    rombo.setDiagmayor(entrada.nextDouble());
-
-    System.out.println("ingrese la diagonal menor del rombo");
-    rombo.setDiagmenor(entrada.nextDouble());
+    System.out.println("el perimetro del Rombo es  " + perimetro);
   }
 }
