@@ -69,6 +69,11 @@ public class Pentagono extends figurasGeometricas {
 
   @Override
   public void calcularArea() {
+    System.out.println("ingrese la lado del pentagono");
+    pent.setLado(entrada.nextDouble());
+
+    System.out.println("ingrese el apotema del pentagono");
+    pent.setApotema(entrada.nextDouble());
     area = ((lado * 5) * apotema) / 2;
 
     System.out.println(" el area del Pentagono es " + area);
@@ -76,25 +81,12 @@ public class Pentagono extends figurasGeometricas {
 
   @Override
   public void calcularPerimetro() {
+    System.out.println(
+      "ingrese la medida de un lado del Pentagono para calcular el perimetro"
+    );
+    pent.setPlado(entrada.nextDouble());
     perimetro = 5 * Plado;
 
     System.out.println("el perimetro del pentagono es  " + perimetro);
   }
 
-  @Override
-  public void ingresarDatosPerimetro() {
-    System.out.println(
-      "ingrese la medida de un lado del Pentagono para calcular el perimetro"
-    );
-    pent.setPlado(entrada.nextDouble());
-  }
-
-  @Override
-  public void ingresarDatosArea() {
-    System.out.println("ingrese la lado del pentagono");
-    pent.setLado(entrada.nextDouble());
-
-    System.out.println("ingrese el apotema del pentagono");
-    pent.setApotema(entrada.nextDouble());
-  }
-}
