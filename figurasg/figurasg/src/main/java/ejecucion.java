@@ -5,10 +5,10 @@ public class ejecucion {
   Triangulo triangulo = new Triangulo();
   Pentagono pent = new Pentagono();
   Rombo rombo = new Rombo();
-  Scanner entrada = new Scanner(System.in);
   int opcion;
 
   public static void main(String[] args) {
+    Scanner entrada = new Scanner(System.in);
     System.out.println(
       "selecione una figura geometrica para calcular su area y perimetro  : \n1:Triangulo \n 2:Rombo \n 3:pentagono"
     );
