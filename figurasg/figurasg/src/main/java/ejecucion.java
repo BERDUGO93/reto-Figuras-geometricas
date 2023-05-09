@@ -21,8 +21,10 @@ public class ejecucion {
         opcion = entrada.nextInt();
 
         if (opcion == 1) {
+          triangulo.ingresarDatosArea();
           triangulo.calcularArea();
         } else if (opcion == 2) {
+          triangulo.ingresarDatosPerimetro();
           triangulo.calcularPerimetro();
         }
 
@@ -55,5 +57,3 @@ public class ejecucion {
     }
   }
 }
-
-
