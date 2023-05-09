@@ -64,30 +64,22 @@ public class Triangulo extends figurasGeometricas {
 
   @Override
   public void calcularArea() {
+    System.out.println("ingrese la base del triangulo");
+    triangulo.setBase(entrada.nextDouble());
+    System.out.println("ingrese el altura del triangulo");
+    triangulo.setAltura(entrada.nextDouble());
     Area = (Base * Altura) / 2;
     System.out.println(" el area del triangulo es " + Area);
   }
 
   @Override
   public void calcularPerimetro() {
-    Perimetro = (lado * 3);
-
-    System.out.println("el perimetro del triangulo es " + Perimetro);
-  }
-
-  @Override
-  public void ingresarDatosPerimetro() {
     System.out.println(
       "ingrese la medida de un lado del triangulo para calcular el perimetro"
     );
     triangulo.setLado(entrada.nextDouble());
-  }
+    Perimetro = (lado * 3);
 
-  @Override
-  public void ingresarDatosArea() {
-    System.out.println("ingrese la base del triangulo");
-    triangulo.setBase(entrada.nextDouble());
-    System.out.println("ingrese el altura del triangulo");
-    triangulo.setAltura(entrada.nextDouble());
+    System.out.println("el perimetro del triangulo es " + Perimetro);
   }
 }
