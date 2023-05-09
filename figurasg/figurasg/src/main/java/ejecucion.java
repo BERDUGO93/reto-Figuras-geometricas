@@ -49,7 +49,6 @@ public class ejecucion {
           pent.calcularArea();
         } else if (opcion == 2) {
           pent.ingresarDatosPerimetro();
-
           pent.calcularPerimetro();
         }
 
